@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Mover: MonoBehaviour
 {
+    [Tooltip("In units per second")]
     [SerializeField] float speed = 1f;   // in units per second
 
     // Start is called before the first frame update
