@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mover: MonoBehaviour
 {
-    [Tooltip("Direction and speed of movement, in units per second")]
+    [Tooltip("Direction and speed of movement, in meters per second")]
     [SerializeField] Vector3 speed;
 
     void Update()

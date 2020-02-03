@@ -22,12 +22,12 @@ public class Enemy : MonoBehaviour {
         var other = collision.gameObject;
         if (other.GetComponent<Laser>()) {
             Debug.Log("Enemy is hit by laser!");
-            Destroy(this.gameObject);
+            GetComponent<HealthSystem>().Damage();
             Destroy(other.gameObject);
         } else if (other.GetComponent<PlayerController>()) {
             Debug.Log("Enemy hits the player!");
             other.gameObject.GetComponent<PlayerController>().HitEnemy();
-            Destroy(this.gameObject);
+            GetComponent<HealthSystem>().Damage();
         } else {
             Debug.Log("Enemy crashes into something unidentified: "+other);
         }
