@@ -5,7 +5,7 @@ Some assets are taken from:
 * [Kenney's website](https://www.kenney.nl/).
 * [PNG Image website](https://pngimage.net/explosion-sprite-png-4/).
 * [Glitch Garden](https://www.glitchthegame.com/public-domain-game-art/).
-
+* FreeSound.org: [Music](https://freesound.org/people/rhodesmas/sounds/321901/), [Explosion](https://freesound.org/people/deleted_user_5405837/sounds/399303/).
 
 Some material is based on the Udemy courses:
 * [The Ultimate Guide to Game Development with Unity 2019](https://www.udemy.com/the-ultimate-guide-to-game-development-with-unity/), by Jonathan Weinberger

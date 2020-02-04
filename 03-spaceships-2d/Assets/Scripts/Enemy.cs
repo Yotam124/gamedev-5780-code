@@ -6,11 +6,14 @@ public class Enemy : MonoBehaviour {
     [Tooltip("Direction and speed of movement, in units/sec")]
     [SerializeField] Vector3 speedVector;
 
+    ScoreKeeper scoreKeeper = null;
+    bool isDying = false;
+
     // Start is called before the first frame update
     void Start() {
-
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
-
+    
     // Update is called once per frame
     void Update() {
         transform.Translate(speedVector * Time.deltaTime);
@@ -22,12 +25,15 @@ public class Enemy : MonoBehaviour {
         var other = collision.gameObject;
         if (other.GetComponent<Laser>()) {
             Debug.Log("Enemy is hit by laser!");
-            GetComponent<HealthSystem>().Damage();
+            if (scoreKeeper)
+                scoreKeeper.IncrementScore();
+            this.GetComponent<HealthSystem>().Damage();
             Destroy(other.gameObject);
-        } else if (other.GetComponent<PlayerController>()) {
+        } else if (other.GetComponent<PlayerController>() && !isDying) {
             Debug.Log("Enemy hits the player!");
-            other.gameObject.GetComponent<PlayerController>().HitEnemy();
-            GetComponent<HealthSystem>().Damage();
+            other.GetComponent<PlayerController>().HitEnemy();
+            this.GetComponent<HealthSystem>().Damage();
+            isDying = true;
         } else {
             Debug.Log("Enemy crashes into something unidentified: "+other);
         }

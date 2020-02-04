@@ -9,25 +9,39 @@ public class HealthSystem : MonoBehaviour
 {
     [Tooltip("Num of hits before the object is dead")] [SerializeField] int lives = 3;
     [Tooltip("Num of seconds to wait before destroying the object")] [SerializeField] float deathDelay = 1f;
+    [Tooltip("Display of the remaining lives")] [SerializeField] LivesKeeper livesKeeper = null;
+    [Tooltip("Display of 'game over' text")] [SerializeField] TextFlasher gameOverFlasher = null;
 
     Transform explosion;
 
     private void Start() {
         explosion = transform.Find("ExplosionEffect");
+
+        if (livesKeeper) {
+            livesKeeper.SetLives(lives);
+        }
     }
 
     public void Damage() {
         --lives;
-        gameObject.transform.localScale *= 0.75f; // Notify the player that a damage was done
+
+        // Notify the player that a damage was done:
+        gameObject.transform.localScale *= 0.75f;
+        if (livesKeeper) {
+            livesKeeper.SetLives(lives);
+        }
+
         if (lives<1) {
             Explosion();
+            if (gameOverFlasher) {
+                print("gameOverFlasher: "+gameOverFlasher);
+                gameOverFlasher.StartFlashing();
+            }
         }
     }
 
     void Explosion() {
-        //Debug.Log("explosion = " + explosion);
         if (explosion) {
-            //Debug.Log("explosion gameObject = " + explosion.gameObject);
             explosion.gameObject.SetActive(true);
             gameObject.GetComponent<Renderer>().enabled = false; // hide player during the xplosion
         }

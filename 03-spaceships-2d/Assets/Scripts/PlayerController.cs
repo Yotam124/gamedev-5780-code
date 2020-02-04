@@ -1,17 +1,19 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [Tooltip("Speed of player movement, in units per second")] [SerializeField] float speed = 1f;
     [Tooltip("Prefab for laser shot by the player")] [SerializeField] GameObject laserPrefab = null;
-
     [Tooltip("Prefab for triple-shot")] [SerializeField] GameObject triplePrefab = null;
 
     bool isTripleShotActive = false;
     bool isShieldActive = false;
+    LivesKeeper livesKeeper = null;
+
+    private void Start() {
+        livesKeeper = FindObjectOfType<LivesKeeper>();
+    }
 
     public void ActivateTripleShot(float seconds) {
         StartCoroutine(ActivateTripleShotCouroutine(seconds));
