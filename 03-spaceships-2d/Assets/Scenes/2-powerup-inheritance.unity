@@ -851,7 +851,7 @@ PrefabInstance:
     - target: {fileID: 780448238477792764, guid: fa8bc32e8fdb68446ad8f6278aa7b11a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.313527
+      value: 4.58
       objectReference: {fileID: 0}
     - target: {fileID: 780448238477792764, guid: fa8bc32e8fdb68446ad8f6278aa7b11a,
         type: 3}
@@ -926,7 +926,7 @@ PrefabInstance:
     - target: {fileID: 3566133325780184475, guid: fdb4005d9358e5440950a8b930176f27,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.75693
+      value: -5.09
       objectReference: {fileID: 0}
     - target: {fileID: 3566133325780184475, guid: fdb4005d9358e5440950a8b930176f27,
         type: 3}
@@ -1078,6 +1078,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
+  deathDelay: 1
+  livesKeeper: {fileID: 0}
+  gameOverSceneIndex: -1
 --- !u!212 &2119696387
 SpriteRenderer:
   m_ObjectHideFlags: 0

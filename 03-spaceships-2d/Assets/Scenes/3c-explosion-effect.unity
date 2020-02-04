@@ -1085,6 +1085,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 1
   deathDelay: 1.5
+  livesKeeper: {fileID: 0}
+  gameOverSceneIndex: -1
 --- !u!212 &2119696387
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1161,6 +1163,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ExplosionEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5106402838249206844, guid: 684e5a9eda8c2ef4ab1713820b48f19f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5106402838249207233, guid: 684e5a9eda8c2ef4ab1713820b48f19f,
         type: 3}
