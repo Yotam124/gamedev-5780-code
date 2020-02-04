@@ -7,6 +7,10 @@ public class TextFlasher : MonoBehaviour
 {
     [Tooltip("Duration of flash, in seconds")] [SerializeField] float duration = 1f;
 
+    private void Start() {
+        StartFlashing();
+    }
+
     public void StartFlashing() {
         StartCoroutine(Flash());
     }

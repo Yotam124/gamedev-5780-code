@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour {
             this.GetComponent<HealthSystem>().Damage();
             isDying = true;
         } else {
-            Debug.Log("Enemy crashes into something unidentified: "+other);
+           // Debug.Log("Enemy crashes into something unidentified: "+other);
         }
     }
 

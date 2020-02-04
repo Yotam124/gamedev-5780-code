@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /**
  * Represents an object that has a given amount of lives, and is destroyed when the number of lives becomes 0.
@@ -10,7 +11,7 @@ public class HealthSystem : MonoBehaviour
     [Tooltip("Num of hits before the object is dead")] [SerializeField] int lives = 3;
     [Tooltip("Num of seconds to wait before destroying the object")] [SerializeField] float deathDelay = 1f;
     [Tooltip("Display of the remaining lives")] [SerializeField] LivesKeeper livesKeeper = null;
-    [Tooltip("Display of 'game over' text")] [SerializeField] TextFlasher gameOverFlasher = null;
+    [Tooltip("Index of the scene that displays 'game over'")] [SerializeField] int gameOverSceneIndex = -1;
 
     Transform explosion;
 
@@ -33,10 +34,7 @@ public class HealthSystem : MonoBehaviour
 
         if (lives<1) {
             Explosion();
-            if (gameOverFlasher) {
-                print("gameOverFlasher: "+gameOverFlasher);
-                gameOverFlasher.StartFlashing();
-            }
+            StartCoroutine(GameOver());
         }
     }
 
@@ -46,5 +44,12 @@ public class HealthSystem : MonoBehaviour
             gameObject.GetComponent<Renderer>().enabled = false; // hide player during the xplosion
         }
         //Destroy(gameObject, deathDelay); // This will be done by an animation event.
+    }
+
+    IEnumerator GameOver() {
+        yield return new WaitForSeconds(deathDelay);
+        if (gameOverSceneIndex >= 0) {
+            SceneManager.LoadScene(gameOverSceneIndex);
+        }
     }
 }
