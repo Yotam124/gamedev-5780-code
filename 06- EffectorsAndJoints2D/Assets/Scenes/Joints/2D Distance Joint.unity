@@ -777,6 +777,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AsteroidSprite 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3341487355327826332, guid: 41e783af855eec741981e4d98810f709,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3341487355327826334, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
       propertyPath: m_GravityScale

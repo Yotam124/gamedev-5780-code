@@ -223,7 +223,6 @@ GameObject:
   - component: {fileID: 821304596}
   - component: {fileID: 821304595}
   - component: {fileID: 821304598}
-  - component: {fileID: 821304600}
   m_Layer: 0
   m_Name: Spring Platform
   m_TagString: Untagged
@@ -309,7 +308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821304594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.78, y: 4.75, z: 0}
+  m_LocalPosition: {x: 4.81, y: 1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -341,18 +340,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.14, y: 0.3}
   m_EdgeRadius: 0
---- !u!114 &821304600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821304594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abe8182d6156bfb45bfef9e359cc337d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &960549172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -368,12 +355,12 @@ PrefabInstance:
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.7899995
+      value: 4.819999
       objectReference: {fileID: 0}
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.80999994
+      value: 1.1500001
       objectReference: {fileID: 0}
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
@@ -435,6 +422,16 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.6614416
       objectReference: {fileID: 0}
+    - target: {fileID: 3341487355327826335, guid: 41e783af855eec741981e4d98810f709,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341487355327826334, guid: 41e783af855eec741981e4d98810f709,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41e783af855eec741981e4d98810f709, type: 3}
 --- !u!1001 &1098653999
@@ -452,12 +449,12 @@ PrefabInstance:
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.34
+      value: -4.59
       objectReference: {fileID: 0}
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.81
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
@@ -519,6 +516,16 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.6554379
       objectReference: {fileID: 0}
+    - target: {fileID: 3341487355327826335, guid: 41e783af855eec741981e4d98810f709,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341487355327826334, guid: 41e783af855eec741981e4d98810f709,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41e783af855eec741981e4d98810f709, type: 3}
 --- !u!1 &1234156488
@@ -573,7 +580,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -627,8 +634,22 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 3.9400508
+  m_Distance: 0.01999998
   m_MaxDistanceOnly: 0
+--- !u!114 &1279874282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279874280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252fc2b50555dda43a2146ef337c09b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hook: {fileID: 1327277696}
+  maxDragDistance: 3
 --- !u!1 &1327277695
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +661,6 @@ GameObject:
   - component: {fileID: 1327277698}
   - component: {fileID: 1327277697}
   - component: {fileID: 1327277696}
-  - component: {fileID: 1327277700}
   - component: {fileID: 1327277699}
   - component: {fileID: 1327277701}
   m_Layer: 0
@@ -728,7 +748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327277695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.36, y: 4.75, z: 0}
+  m_LocalPosition: {x: -4.61, y: 1.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -748,18 +768,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObject1: {fileID: 1327277695}
   gameObject2: {fileID: 1279874280}
---- !u!114 &1327277700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327277695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abe8182d6156bfb45bfef9e359cc337d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1327277701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -887,7 +895,21 @@ SpringJoint2D:
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 3.9400127
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.005
   m_DampingRatio: 0
-  m_Frequency: 0
+  m_Frequency: 1.15
+--- !u!114 &1828912317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828912315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252fc2b50555dda43a2146ef337c09b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hook: {fileID: 821304595}
+  maxDragDistance: 3
