@@ -238,8 +238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d6f077d17660a4e839c9942bebe139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _distance: 2
-  _addDrag: 6
+  _distance: 3
+  _addDrag: 4
   _explosion: {fileID: 902038787}
 --- !u!61 &145730502
 BoxCollider2D:
