@@ -304,7 +304,7 @@ PrefabInstance:
     - target: {fileID: 1202443702184421931, guid: d58d6832a6de1a44799b054ab69e6e8b,
         type: 3}
       propertyPath: m_Name
-      value: LAke2
+      value: Lake
       objectReference: {fileID: 0}
     - target: {fileID: 1202443702184421943, guid: d58d6832a6de1a44799b054ab69e6e8b,
         type: 3}
@@ -314,7 +314,7 @@ PrefabInstance:
     - target: {fileID: 1202443702184421943, guid: d58d6832a6de1a44799b054ab69e6e8b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.55
+      value: 4.96
       objectReference: {fileID: 0}
     - target: {fileID: 1202443702184421943, guid: d58d6832a6de1a44799b054ab69e6e8b,
         type: 3}
@@ -344,7 +344,7 @@ PrefabInstance:
     - target: {fileID: 1202443702184421943, guid: d58d6832a6de1a44799b054ab69e6e8b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1202443702184421943, guid: d58d6832a6de1a44799b054ab69e6e8b,
         type: 3}
@@ -361,6 +361,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1202443702184421929, guid: d58d6832a6de1a44799b054ab69e6e8b,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 836738557442e0b4bbf1856e623f8f05, type: 2}
+    - target: {fileID: 1202443702184421928, guid: d58d6832a6de1a44799b054ab69e6e8b,
+        type: 3}
+      propertyPath: m_SurfaceLevel
+      value: -7.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202443702184421928, guid: d58d6832a6de1a44799b054ab69e6e8b,
+        type: 3}
+      propertyPath: m_FlowMagnitude
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202443702184421928, guid: d58d6832a6de1a44799b054ab69e6e8b,
+        type: 3}
+      propertyPath: m_FlowVariation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202443702184421928, guid: d58d6832a6de1a44799b054ab69e6e8b,
+        type: 3}
+      propertyPath: m_FlowAngle
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d58d6832a6de1a44799b054ab69e6e8b, type: 3}
 --- !u!1001 &3341487356252249112
@@ -373,7 +398,7 @@ PrefabInstance:
     - target: {fileID: 3341487355327826332, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
       propertyPath: m_Name
-      value: AsteroidSprite
+      value: Asteroid
       objectReference: {fileID: 0}
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
@@ -413,7 +438,7 @@ PrefabInstance:
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
@@ -442,7 +467,7 @@ PrefabInstance:
     - target: {fileID: 8439494620982686232, guid: f84f3c23d45ebc74bbc3d0448c314645,
         type: 3}
       propertyPath: m_Name
-      value: SkyTileSprite
+      value: Sky
       objectReference: {fileID: 0}
     - target: {fileID: 8439494620982686234, guid: f84f3c23d45ebc74bbc3d0448c314645,
         type: 3}
@@ -482,7 +507,7 @@ PrefabInstance:
     - target: {fileID: 8439494620982686234, guid: f84f3c23d45ebc74bbc3d0448c314645,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8439494620982686234, guid: f84f3c23d45ebc74bbc3d0448c314645,
         type: 3}

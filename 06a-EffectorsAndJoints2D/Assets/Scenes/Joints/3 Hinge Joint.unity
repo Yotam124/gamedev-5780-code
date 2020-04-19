@@ -166,7 +166,7 @@ PrefabInstance:
     - target: {fileID: 3712917507702269166, guid: f258c51638db050459f103a2dcfeb169,
         type: 3}
       propertyPath: m_Name
-      value: GrassSprite
+      value: Grass
       objectReference: {fileID: 0}
     - target: {fileID: 3712917507702269163, guid: f258c51638db050459f103a2dcfeb169,
         type: 3}
@@ -245,7 +245,7 @@ PrefabInstance:
     - target: {fileID: 3341487355327826332, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
       propertyPath: m_Name
-      value: AsteroidSprite
+      value: Asteroid
       objectReference: {fileID: 0}
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
@@ -417,7 +417,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &925560119
 PrefabInstance:
@@ -429,7 +429,7 @@ PrefabInstance:
     - target: {fileID: 8439494620982686232, guid: f84f3c23d45ebc74bbc3d0448c314645,
         type: 3}
       propertyPath: m_Name
-      value: SkyTileSprite
+      value: Sky
       objectReference: {fileID: 0}
     - target: {fileID: 8439494620982686234, guid: f84f3c23d45ebc74bbc3d0448c314645,
         type: 3}
@@ -507,7 +507,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!233 &1025863258
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -653,7 +653,12 @@ PrefabInstance:
     - target: {fileID: 3341487355327826332, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
       propertyPath: m_Name
-      value: AsteroidSprite
+      value: Asteroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341487355327826332, guid: 41e783af855eec741981e4d98810f709,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
@@ -693,7 +698,7 @@ PrefabInstance:
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3341487355327826320, guid: 41e783af855eec741981e4d98810f709,
         type: 3}
@@ -930,7 +935,7 @@ PrefabInstance:
     - target: {fileID: 6158386456254059338, guid: cce9a35ce640d7d448c9cc032f86ade7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6158386456254059338, guid: cce9a35ce640d7d448c9cc032f86ade7,
         type: 3}
@@ -1412,5 +1417,15 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 158133415}
+    - target: {fileID: 6158386455195456582, guid: cce9a35ce640d7d448c9cc032f86ade7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158386456011323636, guid: cce9a35ce640d7d448c9cc032f86ade7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cce9a35ce640d7d448c9cc032f86ade7, type: 3}
