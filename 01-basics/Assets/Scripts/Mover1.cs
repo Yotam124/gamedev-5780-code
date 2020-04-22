@@ -15,6 +15,6 @@ public class Mover1: MonoBehaviour
     void Update()
     {
         //Debug.Log("Update");
-        transform.position += new Vector3(1, 0, 0); // move 1 unit right
+        transform.position += new Vector3(1, 0, 0); // move 1 meter right
     }
 }
