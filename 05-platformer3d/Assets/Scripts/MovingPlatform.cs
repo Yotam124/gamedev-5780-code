@@ -29,7 +29,6 @@ public class MovingPlatform : MonoBehaviour
         }
     }
 
-
     private void OnTriggerExit(Collider other) {
         if (other.gameObject.GetComponent<Player>()) {
             other.transform.parent = null;
