@@ -7,8 +7,7 @@ using UnityEngine;
  * as long as the up/down arrow key is held pressed.
  */
 public class KeyboardSmoothMover : MonoBehaviour {
-    [Tooltip("in meters per second")]
-    [SerializeField] float speed = 1f;
+    [Tooltip("Movement speed in meters per second")] [SerializeField] float speed = 1f;
 
     // Start is called before the first frame update
     void Start() {

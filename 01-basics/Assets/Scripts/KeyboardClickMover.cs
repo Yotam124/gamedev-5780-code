@@ -7,8 +7,7 @@ using UnityEngine;
  * whenever the player clicks the up/down arrow key.
  */
 public class KeyboardClickMover : MonoBehaviour {
-    [Tooltip("in meters per second")]
-    [SerializeField] float speed = 1f;
+    [Tooltip("Step size in meters")] [SerializeField] float stepSize = 1f;
 
     // Start is called before the first frame update
     void Start() {
@@ -18,9 +17,9 @@ public class KeyboardClickMover : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            transform.position += new Vector3(0, speed * Time.deltaTime, 0);
+            transform.position += new Vector3(0, stepSize, 0);
         } else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            transform.position += new Vector3(0, -speed * Time.deltaTime, 0);
+            transform.position += new Vector3(0, -stepSize, 0);
         }
     }
 }
