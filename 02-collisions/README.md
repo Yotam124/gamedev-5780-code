@@ -7,3 +7,4 @@ Some material is based on the Udemy course:
 Some assets are from:
 * [Matt Whitehead](https://ccsearch.creativecommons.org/photos/7fd4a37b-8d1a-4d4c-80a2-4ca4a3839941)
 * [Kenney's space kit](https://kenney.nl/assets/space-kit)
+* [Ductman's 2D Animated Spacehips](https://assetstore.unity.com/packages/2d/characters/2d-animated-spaceships-96852)
