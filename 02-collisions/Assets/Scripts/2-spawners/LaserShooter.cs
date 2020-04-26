@@ -9,7 +9,7 @@ using UnityEngine;
  * It also updates the "scoreText" field of the new laser.
  */
 public class LaserShooter: KeyboardSpawner {
-    [SerializeField] TextMeshPro textField;
+    [SerializeField] NumberField scoreField;
 
     protected override GameObject spawnObject() {
         GameObject newObject = base.spawnObject();  // base = super
@@ -17,7 +17,7 @@ public class LaserShooter: KeyboardSpawner {
         // Modify the text field of the new object.
         ScoreAdder newObjectScoreAdder = newObject.GetComponent<ScoreAdder>();
         if (newObjectScoreAdder)
-            newObjectScoreAdder.SetTextField(textField);
+            newObjectScoreAdder.SetScoreField(scoreField);
 
         return newObject;
     }

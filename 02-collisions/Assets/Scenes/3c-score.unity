@@ -560,8 +560,9 @@ GameObject:
   - component: {fileID: 1811610588}
   - component: {fileID: 1811610587}
   - component: {fileID: 1811610586}
+  - component: {fileID: 1811610590}
   m_Layer: 0
-  m_Name: ScoreText
+  m_Name: ScoreField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -750,6 +751,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1811610590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811610584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523b3d4932836264caa53ada165578a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1895225570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,7 +948,7 @@ MonoBehaviour:
   prefabToSpawn: {fileID: 206225842732292031, guid: 1064f1e6fd4430a48ae8a63513c527b4,
     type: 3}
   velocityOfSpawnedObject: {x: 0, y: 10, z: 0}
-  textField: {fileID: 1811610586}
+  scoreField: {fileID: 1811610590}
 --- !u!4 &4756833480714881
 Transform:
   m_ObjectHideFlags: 0
