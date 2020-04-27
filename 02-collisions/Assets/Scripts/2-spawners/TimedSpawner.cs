@@ -12,7 +12,7 @@ public class TimedSpawner: MonoBehaviour {
     [SerializeField] float timeBetweenSpawns = 1f;
 
     void Start() {
-        StartCoroutine(SpawnRoutine());
+        this.StartCoroutine(SpawnRoutine());
     }
 
     private IEnumerator SpawnRoutine() {

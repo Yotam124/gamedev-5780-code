@@ -8,19 +8,24 @@ public class ShieldThePlayer : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") {
             Debug.Log("Shield triggered by player");
-            var destroyComponent = other.gameObject.GetComponent<DestroyOnTrigger2D>();
+            var destroyComponent = other.GetComponent<DestroyOnTrigger2D>();
             if (destroyComponent) {
-                StartCoroutine(destroyComponent.DeactivateTemporarily(duration));
+                destroyComponent.StartCoroutine(ShieldTemporarily(destroyComponent));
+                // NOTE: If you just call "StartCoroutine", then it will not work, 
+                //       since the present object is destroyed!
                 Destroy(gameObject);
             }
         } else {
             Debug.Log("Shield triggered by "+other.name);
         }
     }
-    
     private IEnumerator ShieldTemporarily(DestroyOnTrigger2D destroyComponent) {
-        destroyComponent.Deactivate();
-        yield return new WaitForSeconds(duration);
-        destroyComponent.Activate();
+        destroyComponent.enabled = false;
+        for (float i = duration; i > 0; i--) {
+            Debug.Log("Shield: " + i + " seconds remaining!");
+            yield return new WaitForSeconds(1);
+        }
+        Debug.Log("Shield gone!");
+        destroyComponent.enabled = true;
     }
 }
