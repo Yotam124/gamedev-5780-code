@@ -13,6 +13,7 @@ public class TimedSpawner: MonoBehaviour {
 
     void Start() {
         this.StartCoroutine(SpawnRoutine());
+        Debug.Log("Start finished");
     }
 
     private IEnumerator SpawnRoutine() {

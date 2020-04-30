@@ -13,7 +13,7 @@ public class ShieldThePlayer : MonoBehaviour {
                 destroyComponent.StartCoroutine(ShieldTemporarily(destroyComponent));
                 // NOTE: If you just call "StartCoroutine", then it will not work, 
                 //       since the present object is destroyed!
-                Destroy(gameObject);
+                Destroy(gameObject);  // Destroy the shield itself - prevent double-use
             }
         } else {
             Debug.Log("Shield triggered by "+other.name);
