@@ -1,15 +1,18 @@
-# Unity week 3: Spaceships in 2D
+# Unity week 3: Animation, Sound, UI
 
-Some assets are taken from:
+## Credits
 
-* [Kenney's website](https://www.kenney.nl/).
-* [PNG Image website](https://pngimage.net/explosion-sprite-png-4/).
-* [Glitch Garden](https://www.glitchthegame.com/public-domain-game-art/).
-* FreeSound.org: [Music](https://freesound.org/people/rhodesmas/sounds/321901/), [Explosion](https://freesound.org/people/deleted_user_5405837/sounds/399303/).
-* [CCSearch](https://ccsearch.creativecommons.org/photos/0a049b3f-1f71-4071-ad71-8e38afdef822).
+Online courses:
+* [Unity 2D](https://www.gamedev.tv/p/complete-unity-developer-2d/?product_id=1503853), by GameDev.tv.
+* [Unity 2019](https://www.udemy.com/the-ultimate-guide-to-game-development-with-unity/), by Jonathan Weinberger.
 
-Some material is based on the Udemy courses:
-* [The Ultimate Guide to Game Development with Unity 2019](https://www.udemy.com/the-ultimate-guide-to-game-development-with-unity/), by Jonathan Weinberger
-* [Complete C# Unity Developer 2D: Learn to Code Making Games](https://www.udemy.com/course/unitycourse).
+Graphics:
+* [Matt Whitehead](https://ccsearch.creativecommons.org/photos/7fd4a37b-8d1a-4d4c-80a2-4ca4a3839941)
+* [Kenney's space kit](https://kenney.nl/assets/space-kit)
+* [Ductman's 2D Animated Spacehips](https://assetstore.unity.com/packages/2d/characters/2d-animated-spaceships-96852)
+* [Franc from the Noun Project](https://commons.wikimedia.org/w/index.php?curid=64661575)
+- [Glitch Garden Assets](https://www.glitchthegame.com/public-domain-game-art/) -
 
-
+Sounds:
+* [FreeSound user X3nus](https://freesound.org/people/X3nus/sounds/449938/)
+* [FreeSound user 5405837](https://freesound.org/people/deleted_user_5405837/sounds/399303/)

@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Enemy
   - Laser
-  - BackgroundMusic
-  - ScoreKeeper
+  - Wall
   layers:
   - Default
   - TransparentFX
