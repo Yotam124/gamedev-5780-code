@@ -8,11 +8,24 @@ using UnityEngine;
 public class DestroyOnTrigger2D : MonoBehaviour {
     [Tooltip("Every object tagged with this tag will trigger the destruction of this object")]
     [SerializeField] string triggeringTag;
+    [SerializeField] HitPointsCounter hitPoints;
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == triggeringTag && enabled) {
-            Destroy(this.gameObject);
-            Destroy(other.gameObject);
+            if (this.tag == "Player")
+            {
+                hitPoints.SetNumber(hitPoints.GetNumber() - 1);
+                if (hitPoints.GetNumber() == 0)
+                {
+                    Destroy(this.gameObject);
+                }
+                Destroy(other.gameObject);
+            }
+            else
+            {
+                Destroy(this.gameObject);
+                Destroy(other.gameObject);
+            }
         }
     }
 }
